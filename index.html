@@ -239,11 +239,19 @@
       </div>
       <br /><br />
       <div class="row">
-        <footer class="footer bg-success text-light pt-3 pb-3">
-          &copy; Copyrighted to iGurkul, 2024
-        </footer>
+        <footer
+          class="footer bg-success text-light pt-3 pb-3"
+          id="footer"
+        ></footer>
       </div>
     </div>
+    <script>
+      const date = new Date();
+      let year = date.getFullYear();
+      document.getElementById(
+        "footer"
+      ).innerHTML = `&copy; Copyrighted to iGurkul, ${year}`;
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
