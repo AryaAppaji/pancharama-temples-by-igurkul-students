@@ -129,10 +129,18 @@
         </p>
       </div>
       <div class="row">
-        <footer class="footer bg-success text-light pt-3 pb-3">
-          &copy; Copyrighted to iGurkul, 2024
-        </footer>
+        <footer
+          class="footer bg-success text-light pt-3 pb-3"
+          id="footer"
+        ></footer>
       </div>
     </div>
+    <script>
+      const date = new Date();
+      let year = date.getFullYear();
+      document.getElementById(
+        "footer"
+      ).innerHTML = `&copy; Copyrighted to iGurkul, ${year}`;
+    </script>
   </body>
 </html>
